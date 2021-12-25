@@ -157,7 +157,7 @@ if (isset($_SESSION['login_user'])) {
                     <div class="container-lg">
                         <div class="row">
                             <div class="col-lg-12">
-                                <p class="m-0 text-center text-muted footer_text">&copy; 2021 sav<span>our</span>y.</p>
+                                <p class="m-0 text-center text-muted footer_text">&copy; 2021 sipak<span>coy</span>.</p>
                             </div>
                         </div>
                     </div>
