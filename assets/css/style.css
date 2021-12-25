@@ -1,0 +1,61 @@
+/* color code
+red : E51D1D
+black : 000000
+white : ffffff
+*/
+
+.bg-red{
+    background-color: #5AA86F;
+}
+
+.color-red{ 
+    color: #5AA86F;
+}
+
+
+.container-lg .navbar-brand{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.container-lg .navbar-brand span{
+    color: #5AA86F;
+    font-weight: bold;
+}
+
+.home-text span{
+    color: #5AA86F;
+}
+
+.navbar .nav-item{
+    padding: 0  15px;
+}
+
+.navbar .nav-item .nav-link{
+    color: #000000;
+    font-weight: 500;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #ffffff
+}
+
+/* service */
+.section-title span{
+    color:#5AA86F;
+}
+
+/* footer */
+.footer_text span{
+    color:#5AA86F;
+}
+
+/* service */
+.services .service-item:hover{
+    box-shadow: -1px 9px 20px -12px rgba(0, 0, 0, .5);
+}
+
+.services .text-muted span{
+    color: #5AA86F;
+    font-weight: 500;
+}
