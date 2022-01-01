@@ -40,24 +40,9 @@ if (isset($_SESSION['login_user'])) {
         <div class="container-lg">
             <img src="assets/img/logosaw.png" width="50" height="50" alt="logo">
             <a class="navbar-brand fw-bold text-light" href="#">Sispakcoy</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="admin_page.php">Beranda<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="menuadmin_gejala.php">Gejala</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="menuadmin_penyakit.php">Penyakit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="menuadmin_keputusan.php">Keputusan</a>
-                    </li>
-            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span></button>
-            <button type="button" class="btn btn-danger ms-auto fw-bold text-light" id="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Logout</button>
+            <a href="logout.php" class="btn btn-danger ms-auto fw-bold text-light">Logout</a>
         </div>
     </nav>
     <!-- header end -->
@@ -67,13 +52,47 @@ if (isset($_SESSION['login_user'])) {
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
-                        <h5 class=" fw-bold mb-1">Welcome!</h5>
-                        <h2 class="fw-bold mb-5 fs-1 py-4">Admin Sispak<span>coy</span></h2>
+                        <h5 class=" fw-bold mb-1">Dashboard</h5>
+                        <h2 class="fw-bold mb-5 fs-1 py-4">Admin Sispakcoy</h2>
                     </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-4 mb-4 shadow-sm">
+                    <a href="menuadmin_gejala.php">
+                        <div class="service-item p-4 bg-white">
+                            <div class="icon my-3 text-success fs-1">
+                                <i class="fas fa-clipboard-list fa-lg"></i>
+                            </div>
+                            <h3 class="fs-5 py-2 fw-bold">Gejala</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 shadow-sm">
+                    <a href="menuadmin_penyakit.php">
+                        <div class="service-item p-4 bg-white">
+                            <div class="icon my-3 text-success fs-1">
+                                <i class="fas fa-viruses"></i>
+                            </div>
+                            <h3 class="fs-5 py-2 fw-bold">Penyakit</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 shadow-sm">
+                    <a href="menuadmin_keputusan.php">
+                        <div class="service-item p-4 bg-white">
+                            <div class="icon my-3 text-success fs-1">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3 class="fs-5 py-2 fw-bold">Keputusan</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- service section end -->
+
 
     <!-- footer section -->
     <footer class="footer border-top py-4">
@@ -96,7 +115,7 @@ if (isset($_SESSION['login_user'])) {
                     <div class="container-lg">
                         <div class="row">
                             <div class="col-lg-12">
-                                <p class="m-0 text-center text-muted footer_text">&copy; 2021 sipak<span>coy</span>.</p>
+                                <p class="m-0 text-center text-muted footer_text">&copy; 2021 sispak<span>coy</span>.</p>
                             </div>
                         </div>
                     </div>

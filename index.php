@@ -1,3 +1,11 @@
+<?php
+include('koneksi.php');
+
+if (isset($_SESSION['login_user'])) {
+    header("location: about.php");
+}
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -32,7 +40,7 @@
             <a class="navbar-brand fw-bold text-light" href="#">Sispakcoy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span></button>
-            <button type="button" class="btn btn-light ms-auto fw-bold text-success" id="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+            <button type="button" class="btn btn-light ms-auto fw-bold text-success" id="myBtn" data-bs-toggle="modal" data-bs-target="#modalLoginForm">Login</button>
         </div>
     </nav>
     <!-- header end -->
@@ -88,7 +96,7 @@
     <!-- service section end -->
 
     <!-- modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -104,11 +112,13 @@
                         <div class="form-group" method="post">
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="username" placeholder="Username">
+                                <input type="text" class="form-control" name="username" id="password" placeholder="Masukkan Username">
                             </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            <div class="form-group" method="post">
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Masukkan Password">
+                                </div>
                             </div>
                             <div class="col-12 text-center pt-3">
                                 <button type="submit" id="submit" class="btn btn-success" method="post">Login</button>

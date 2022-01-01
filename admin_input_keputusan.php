@@ -94,7 +94,7 @@ if (isset($_SESSION['login_user'])) {
                         <label for="floatingSelect">Pilih Penyakit</label>
                     </div>
                     <br>
-                    <label for="sel2"><b>GEJALA PENYAKIT</b></label><br>
+                    <label for="sel2"><b>Gejala Penyakit</b></label><br>
                     <form id="form2" name="form2" method="post" action="menu_diagnosa.php">
                         <div class="panel panel-primary">
                             <div class="panel-body">

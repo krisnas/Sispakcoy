@@ -57,7 +57,7 @@ if (isset($_SESSION['login_user'])) {
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span></button>
-            <button type="button" class="btn btn-danger ms-auto fw-bold text-light" id="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Logout</button>
+            <a href="logout.php" class="btn btn-danger ms-auto fw-bold text-light">Logout</a>
         </div>
     </nav>
     <!-- header end -->

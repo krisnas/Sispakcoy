@@ -119,11 +119,13 @@ if (isset($_SESSION['login_user'])) {
                         <div class="form-group" method="post">
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="username" placeholder="Username">
+                                <input type="text" class="form-control" name="username" id="password" placeholder="Masukkan Username">
                             </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            <div class="form-group" method="post">
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Masukkan Password">
+                                </div>
                             </div>
                             <div class="col-12 text-center pt-3">
                                 <button type="submit" id="submit" class="btn btn-success" method="post">Login</button>
