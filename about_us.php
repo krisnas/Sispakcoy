@@ -28,7 +28,7 @@
 
 <body class="">
     <!-- header section -->
-    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #5AA86F;">
+    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #198754;">
         <div class="container-lg">
             <img src="assets/img/logosaw.png" width="50" height="50" alt="logo">
             <a class="navbar-brand fw-bold text-light" href="#">Sispakcoy</a>

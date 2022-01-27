@@ -36,7 +36,7 @@ if (isset($_SESSION['login_user'])) {
 
 <body>
     <!-- header section -->
-    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #5AA86F;">
+    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #198754;">
         <div class="container-lg">
             <img src="assets/img/logosaw.png" width="50" height="50" alt="logo">
             <a class="navbar-brand fw-bold text-light" href="#">Sispakcoy</a>
@@ -46,7 +46,7 @@ if (isset($_SESSION['login_user'])) {
                         <a class="nav-link" href="index.php">Beranda</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Daftar<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Daftar Penyakit<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="menu_diagnosa.php">Diagnosa</a>
@@ -92,7 +92,7 @@ if (isset($_SESSION['login_user'])) {
                                         <td>" . $id . "</td>
                                         <td>" . $data[0] . "</td>  
                                         <td>" . $data[1] . "</td> 
-                                        <td><a href=\"detail_penyakit.php?id=" . $data[0] . "\"><i class='fa fa-search'></i></a></td>
+                                        <td><a href=\"detail_penyakit.php?id=" . $data[0] . "\"><i class='fa fa-share text-success'></i></a></td>
                                         </tr>";
                         }
                         ?>

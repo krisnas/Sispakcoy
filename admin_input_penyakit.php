@@ -36,7 +36,7 @@ if (isset($_SESSION['login_user'])) {
 
 <body>
     <!-- header section -->
-    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #5AA86F;">
+    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #198754;">
         <div class="container-lg">
             <img src="assets/img/logosaw.png" width="50" height="50" alt="logo">
             <a class="navbar-brand fw-bold text-light" href="#">Sispakcoy</a>
@@ -69,7 +69,7 @@ if (isset($_SESSION['login_user'])) {
                 <div class="row g-0">
                     <div class="col-sm-4 py-4">
                         <a href="menuadmin_gejala.php">
-                            <button type="button" class="btn btn-dark">
+                            <button type="button" class="btn btn-secondary">
                                 <i class="fa fa-chevron-left"></i><b> Kembali</b>
                             </button>
                         </a>

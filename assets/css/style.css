@@ -5,11 +5,11 @@ white : ffffff
 */
 
 .bg-red{
-    background-color: #5AA86F;
+    background-color: #198754;
 }
 
 .color-red{ 
-    color: #5AA86F;
+    color: #198754;
 }
 
 
@@ -20,12 +20,12 @@ white : ffffff
 }
 
 .container-lg .navbar-brand span{
-    color: #5AA86F;
+    color: #198754;
     font-weight: bold;
 }
 
 .home-text span{
-    color: #5AA86F;
+    color: #198754;
 }
 
 .navbar .nav-item{
@@ -42,12 +42,12 @@ white : ffffff
 
 /* service */
 .section-title span{
-    color:#5AA86F;
+    color:#198754;
 }
 
 /* footer */
 .footer_text span{
-    color:#5AA86F;
+    color:#198754;
 }
 
 /* service */
@@ -56,6 +56,6 @@ white : ffffff
 }
 
 .services .text-muted span{
-    color: #5AA86F;
+    color: #198754;
     font-weight: 500;
 }

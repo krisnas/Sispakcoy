@@ -36,7 +36,7 @@ if (isset($_SESSION['login_user'])) {
 
 <body>
     <!-- header section -->
-    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #5AA86F;">
+    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #198754;">
         <div class="container-lg">
             <img src="assets/img/logosaw.png" width="50" height="50" alt="logo">
             <a class="navbar-brand fw-bold text-light" href="#">Sispakcoy</a>
@@ -64,7 +64,7 @@ if (isset($_SESSION['login_user'])) {
                             <div class="icon my-3 text-success fs-1">
                                 <i class="fas fa-clipboard-list fa-lg"></i>
                             </div>
-                            <h3 class="fs-5 py-2 fw-bold">Gejala</h3>
+                            <h3 class="fs-5 py-2 fw-bold text-dark">Gejala</h3>
                         </div>
                     </a>
                 </div>
@@ -74,7 +74,7 @@ if (isset($_SESSION['login_user'])) {
                             <div class="icon my-3 text-success fs-1">
                                 <i class="fas fa-viruses"></i>
                             </div>
-                            <h3 class="fs-5 py-2 fw-bold">Penyakit</h3>
+                            <h3 class="fs-5 py-2 fw-bold text-dark">Penyakit</h3>
                         </div>
                     </a>
                 </div>
@@ -84,7 +84,7 @@ if (isset($_SESSION['login_user'])) {
                             <div class="icon my-3 text-success fs-1">
                                 <i class="fas fa-balance-scale"></i>
                             </div>
-                            <h3 class="fs-5 py-2 fw-bold">Keputusan</h3>
+                            <h3 class="fs-5 py-2 fw-bold text-dark">Keputusan</h3>
                         </div>
                     </a>
                 </div>

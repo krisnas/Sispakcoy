@@ -30,11 +30,11 @@ if (isset($_SESSION['login_user'])) {
     <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>Sispakcoy</title>
+    <title>Sispakcoy - Home</title>
 
 <body class="">
     <!-- header section -->
-    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #5AA86F;">
+    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #198754;">
         <div class="container-lg">
             <img src="assets/img/logosaw.png" width="50" height="50" alt="logo">
             <a class="navbar-brand fw-bold text-light" href="#">Sispakcoy</a>
@@ -45,49 +45,86 @@ if (isset($_SESSION['login_user'])) {
     </nav>
     <!-- header end -->
 
+    <!-- home section -->
+    <section class="home">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="container-lg">
+                <div class="row min-vh-100 align-items-center align-content-center">
+                    <div class="col-md-6 mt-5 mt-md-0">
+                        <div class="home-img text-center">
+                            <div class="carousel-inner">
+                                <div class="col-lg-8">
+                                    <div class="carousel-item active" data-bs-interval="2000">
+                                        <img src="assets/img/pak1.png" alt="home img" width="500">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="assets/img/pak2.png" alt="home img" width="500">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="assets/img/pak3.png" alt="home img" width="500">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+                        <div class="home-text">
+                            <p class="fs-1 fw-bold mb-1 ">Selamat Datang!!</p>
+                            <p class="fs-5">Website Layanan Yang Membantu Para Petani Tanaman Pakcoy Untuk Mendiagnosa Penayakit Pada Tanaman Pakcoy.</p>
+                            <a href="#services" class="btn btn-primary px-3 mt-3 btn-home">Lihat Layanan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section end -->
+
     <!-- service section -->
-    <section class="services py-5">
-        <div class="container-lg py-5">
+    <section class="services" id="services">
+        <div class="container-lg">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
-                        <h5 class=" fw-bold mb-1">Welcome!</h5>
+                        <h2 class=" fw-bold mb-5">Layanan</h2>
                         <h2 class="fw-bold mb-5 fs-1 py-4">Diagnosa Penyakit Tanaman Pakcoy</h2>
                     </div>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-6 col-lg-4 mb-4 shadow-sm">
-                    <a href="menu_daftar.php">
-                        <div class="service-item p-4 bg-white">
-                            <div class="icon my-3 text-success fs-1">
-                                <i class="fas fa-clipboard-list fa-lg"></i>
-                            </div>
-                            <h3 class="fs-5 py-2 fw-bold">Daftar Penyakit</h3>
-                            <p class="text-muted fs-5">Anda Dapat Melihat Daftar Penyakit Pada Tanaman Pakcoy</p>
+                    <div class="service-item p-4 bg-white">
+                        <div class="icon my-3 text-success fs-1">
+                            <i class="fas fa-clipboard-list fa-lg"></i>
                         </div>
+                        <h3 class="fs-5 py-2 fw-bold text-dark">Daftar Penyakit</h3>
+                        <p class="text-muted fs-5">Anda Dapat Melihat Daftar Penyakit Pada Tanaman Pakcoy</p>
+                        <a href="menu_daftar.php" class="btn btn-primary px-3 mt-3 btn-home">Selengkapnya</a>
+                    </div>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 shadow-sm">
-                    <a href="menu_diagnosa.php">
-                        <div class="service-item p-4 bg-white">
-                            <div class="icon my-3 text-success fs-1">
-                                <i class="fas fa-stethoscope fa-lg"></i>
-                            </div>
-                            <h3 class="fs-5 py-2 fw-bold">Diagnosa Penyakit</h3>
-                            <p class="text-muted fs-5">Anda Dapat Mengecek Gejala Yang Terjadi Pada Tanaman Pakcoy</p>
+                    <div class="service-item p-4 bg-white">
+                        <div class="icon my-3 text-success fs-1">
+                            <i class="fas fa-stethoscope fa-lg"></i>
                         </div>
+                        <h3 class="fs-5 py-2 fw-bold text-dark">Diagnosa Penyakit</h3>
+                        <p class="text-muted fs-5">Anda Dapat Mengecek Gejala Yang Terjadi Pada Tanaman Pakcoy</p>
+                        <a href="menu_diagnosa.php" class="btn btn-primary px-3 mt-3 btn-home">Diagnosa Sekarang</a>
+                    </div>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 shadow-sm">
-                    <a href="about_us.php">
-                        <div class="service-item p-4 bg-white">
-                            <div class="icon my-3 text-success fs-1">
-                                <i class="fas fa-users fa-lg"></i>
-                            </div>
-                            <h3 class="fs-5 py-2 fw-bold">Tentang Kami</h3>
-                            <p class="text-muted fs-5">Anda Dapat Melihat Biodata Tentang Kami</p>
+                    <div class="service-item p-4 bg-white">
+                        <div class="icon my-3 text-success fs-1">
+                            <i class="fas fa-users fa-lg"></i>
                         </div>
+                        <h3 class="fs-5 py-2 fw-bold text-dark">Tentang Kami</h3>
+                        <p class="text-muted fs-5">Anda Dapat Melihat Biodata Tentang Kami</p>
+                        <a href="about_us.php" class="btn btn-primary px-3 mt-3 btn-home">Selengkapnya</a>
+                    </div>
                     </a>
                 </div>
             </div>

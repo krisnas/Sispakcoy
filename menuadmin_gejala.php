@@ -36,7 +36,7 @@ if (isset($_SESSION['login_user'])) {
 
 <body>
     <!-- header section -->
-    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #5AA86F;">
+    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #198754;">
         <div class="container-lg">
             <img src="assets/img/logosaw.png" width="50" height="50" alt="logo">
             <a class="navbar-brand fw-bold text-light" href="#">Sispakcoy</a>
@@ -69,7 +69,7 @@ if (isset($_SESSION['login_user'])) {
                 <h2 class="text-center fw-normal fs-1 py-4">Daftar Gejala Pada Tanaman Pakcoy</h2>
                 <hr>
                 <a href="admin_input_gejala.php">
-                    <button type="button" class="btn btn-dark">
+                    <button type="button" class="btn btn-secondary">
                         <i class="fa fa-plus"></i><b> Tambah Data</b>
                     </button>
                 </a>
@@ -95,7 +95,7 @@ if (isset($_SESSION['login_user'])) {
                                     <td>" . $id . "</td>
                                     <td>" . $data[0] . "</td>  
                                     <td>" . $data[1] . "</td>  
-                                    <td><a href=\"admin_delete_gejala.php?id=" . $data[0] . "\"  onclick='return checkDelete()'><i class='fa fa-trash'></i></a>" . "</td>
+                                    <td><a href=\"admin_delete_gejala.php?id=" . $data[0] . "\"  onclick='return checkDelete()'><i class='fa fa-trash text-success'></i></a>" . "</td>
                                     </tr>";
                         }
                         ?>

@@ -35,7 +35,7 @@ if (isset($_SESSION['login_user'])) {
 
 <body class="">
     <!-- header section -->
-    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #5AA86F;">
+    <nav class="navbar navbar-expand-lg shadow fixed-top " style="background-color: #198754;">
         <div class="container-lg">
             <img src="assets/img/logosaw.png" width="50" height="50" alt="logo">
             <a class="navbar-brand fw-bold text-light" href="#">Sispakcoy</a>
@@ -114,7 +114,7 @@ if (isset($_SESSION['login_user'])) {
                                             echo "<script>alert('Gejala harus diceklist..!!')</script>";
                                         } else {
                                             //looping mencari terlebih dahulu gejala yg diceklist
-                                            $query = "SELECT * FROM db_sispaksawtih.basispengetahuan where gejala IN (";
+                                            $query = "SELECT * FROM db_sispakcoy.basispengetahuan where gejala IN (";
                                             for ($x = 0; $x < $jumlah_dipilih; $x++) {
                                                 $query .= "'" . $gejala[$x] . "', ";
                                             }
@@ -122,8 +122,8 @@ if (isset($_SESSION['login_user'])) {
                                             $query = $query . ")";
                                             //dibandingkan antara total yang diceklist dengan total gejala yang ada dipenyakit tersebut
                                             $tampil = "select a.idpenyakit,a.namapenyakit,count(a.gejala) as gejalaA,count(b.gejala)as gejalaB from (
-                                                            SELECT a.namapenyakit,a.gejala,b.idpenyakit FROM db_sispaksawtih.basispengetahuan a left join 
-                                                            db_sispaksawtih.penyakit b on a.namapenyakit = b.namapenyakit) a left join ($query)B ON a.namapenyakit = b.namapenyakit and a.gejala = b.gejala
+                                                            SELECT a.namapenyakit,a.gejala,b.idpenyakit FROM db_sispakcoy.basispengetahuan a left join 
+                                                            db_sispakcoy.penyakit b on a.namapenyakit = b.namapenyakit) a left join ($query)B ON a.namapenyakit = b.namapenyakit and a.gejala = b.gejala
                                                             group by a.namapenyakit,a.idpenyakit having count(a.gejala) = count(b.gejala)";
                                             //echo $tampil;
 
